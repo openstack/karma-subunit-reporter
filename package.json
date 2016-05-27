@@ -1,0 +1,32 @@
+{
+  "name": "karma-subunit-reporter",
+  "version": "0.0.1",
+  "description": "A Karma plugin to report results in Subunit format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timothyb89/karma-subunit-reporter.git"
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-reporter",
+    "subunit"
+  ],
+  "author": "OpenStack <openstack-dev@lists.openstack.org> (http://www.openstack.org/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/timothyb89/karma-subunit-reporter/issues"
+  },
+  "homepage": "https://github.com/timothyb89/karma-subunit-reporter#readme",
+  "dependencies": {
+    "eslint": "^1.5.1",
+    "eslint-config-openstack": "^1.2.4",
+    "node-subunit": "0.0.1"
+  },
+  "peerDependencies": {
+    "karma": ">=0.9"
+  }
+}
