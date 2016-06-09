@@ -1,4 +1,3 @@
-
 // Copyright 2016 Hewlett-Packard Development Company, L.P.
 //
 // Licensed under the Apache License, Version 2.0 (the "License"); you may
@@ -24,6 +23,18 @@ function SubunitReporter(helper, logger, config) {
   var slug = config.slug || false;
   var separator = config.separator || '.';
 
+  function normalize(parts) {
+    if (slug) {
+      return parts.map(function(part) {
+        return part.replace(/\s+/g, '_');
+      });
+    } else {
+      return parts;
+    }
+  }
+
+  var normalizeFunction = config.normalize || normalize;
+
   var startTime, stream, file;
 
   this.onRunStart = function(browsers) {
@@ -40,10 +51,7 @@ function SubunitReporter(helper, logger, config) {
     var parts = result.suite.slice();
     parts.push(result.description);
 
-    var testId = parts.join(separator);
-    if (slug) {
-      testId = testId.replace(/\s+/g, '_');
-    }
+    var testId = normalizeFunction(parts).join(separator);
 
     var status;
     if (result.success) {
