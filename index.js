@@ -14,7 +14,7 @@
 'use strict';
 
 var fs = require('fs');
-var subunit = require('node-subunit');
+var subunit = require('subunit-js');
 
 function SubunitReporter(helper, logger, config) {
   config = config || {};
