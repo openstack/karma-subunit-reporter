@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timothyb89/karma-subunit-reporter.git"
+    "url": "git+https://github.com/openstack/karma-subunit-reporter.git"
   },
   "keywords": [
     "karma-plugin",
@@ -19,9 +19,9 @@
   "author": "OpenStack <openstack-dev@lists.openstack.org> (http://www.openstack.org/)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/timothyb89/karma-subunit-reporter/issues"
+    "url": "https://github.com/openstack/karma-subunit-reporter/issues"
   },
-  "homepage": "https://github.com/timothyb89/karma-subunit-reporter#readme",
+  "homepage": "http://git.openstack.org/cgit/openstack/karma-subunit-reporter/tree/README.md",
   "dependencies": {
     "subunit-js": "0.0.2"
   },
