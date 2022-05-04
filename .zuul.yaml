@@ -1,3 +1,3 @@
 - project:
     templates:
-      - nodejs14-jobs
+      - nodejs16-jobs
